@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layoutone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:src="@drawable/icon_back"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginStart="14dp"
+                android:layout_width="36dp"
+                android:layout_height="30dp" />
+
+            <FrameLayout
+                android:id="@+id/frame_layoutone"
+                android:background="@color/grey"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+
+                <ImageView
+                    android:id="@+id/icon_search"
+                    android:src="@drawable/icon_search"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:id="@+id/name_search"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Muhammad Rafly Raihan Sumardi"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/photo_header"
+            android:src="@drawable/photo_header"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/linear_layoutone"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        
+        <ImageView
+            android:id="@+id/photo_profile"
+            android:src="@drawable/ic_icon_laptop"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@id/guideline"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_width="128dp"
+            android:layout_height="128dp" />
+
+        <ImageView
+            android:id="@+id/icon_notification"
+            android:src="@drawable/icon_notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_header"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:text="Muhammad Rafly Raihan Sumardi"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_profile"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bio"
+            android:text="Saya adalah seorang mahasiswa S1 Informatika yang sedang mencoba menjadi seorang Android Developer yang jago"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/place"
+            android:text="Binar Academy"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bio"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/location"
+            android:text="Tangerang Selatan, Indonesia"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear_layouttwo"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/followers"
+                android:text="24,342 followers"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/connections"
+                android:text="500+ connections"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/followers_one"
+            android:src="@drawable/followers_one"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layouttwo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/followers_two"
+            android:src="@drawable/followers_two"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layouttwo"
+            app:layout_constraintStart_toEndOf="@+id/followers_one"
+            app:layout_constraintEnd_toEndOf="@+id/followers_one"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/mutual"
+            android:text="307 mutual: Alamanda Shantika Santoso, Senno Hananto, and 228 others"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layouttwo"
+            app:layout_constraintStart_toEndOf="@+id/followers_two"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/button_massage"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="sans-serif-medium"
+            android:text="Massage"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/followers_one"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="310dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/icon_more"
+            android:src="@drawable/icon_more"
+            app:layout_constraintStart_toEndOf="@+id/button_massage"
+            app:layout_constraintBottom_toBottomOf="@+id/button_massage"
+            app:layout_constraintTop_toBottomOf="@+id/mutual"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_hiring"
+            android:background="@color/grey"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/button_massage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_hiring"
+                android:text="Hiring a Business Analyst and 1 other"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/place_hiring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Binar Academy - Jakarta City - 300 days ago"
+                android:textColor="@color/dark_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/detail_hiring"
+                android:text="View both jobs"
+                android:fontFamily="sans-serif-black"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layouttwo"
+            android:background="@color/grey"
+            app:layout_constraintTop_toBottomOf="@+id/frame_hiring"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/highlights"
+            android:text="Highlights"
+            android:fontFamily="sans-serif-black"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/frame_layouttwo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/logo_binar"
+            android:src="@drawable/logo_binar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/highlights"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/highlights_text"
+            android:text="You both work at Binar Academy"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/highlights"
+            app:layout_constraintStart_toEndOf="@+id/logo_binar"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/highlights_description"
+            android:text="Muhammad Rafly started at Binar Academy 1 years before you did"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/highlights_text"
+            app:layout_constraintStart_toEndOf="@+id/logo_binar"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_massage_highlights"
+            android:text="Massage"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintTop_toBottomOf="@+id/highlights_description"
+            app:layout_constraintStart_toEndOf="@+id/logo_binar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
