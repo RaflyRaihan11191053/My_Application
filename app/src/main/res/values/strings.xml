@@ -9,6 +9,9 @@
         <item>Ipad</item>
         <item>Iwatch</item>
     </string-array>
+
+    <string name="search_text">Cari makanan, layanan, &amp; tujuan</string>
+
     <string name="title_activity_main2">MainActivity2</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

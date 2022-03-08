@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutGojek">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_one"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+        <SearchView
+            android:id="@+id/search_gojek"
+            android:background="@drawable/searchview_gojek"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_one"
+            app:layout_constraintBottom_toTopOf="@id/frame_one"
+            android:layout_marginStart="12dp"
+            android:layout_width="320dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/icon_profile"
+            android:src="@drawable/ic_icon_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_one"
+            app:layout_constraintBottom_toTopOf="@id/frame_one"
+            android:layout_marginEnd="12dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/search_text"
+            android:text="@string/search_text"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/search_gojek"
+            app:layout_constraintBottom_toBottomOf="@+id/search_gojek"
+            android:layout_marginStart="56dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/frame_two"
+            android:background="@drawable/gopayview_gojek"
+            android:backgroundTint="@color/gojek_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_one"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="96dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_three"
+            android:background="@drawable/gopay_gojek"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toTopOf="@+id/frame_two"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_two"
+            app:layout_constraintStart_toStartOf="@+id/frame_two"
+            android:layout_marginStart="24dp"
+            android:layout_width="128dp"
+            android:layout_height="72dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
