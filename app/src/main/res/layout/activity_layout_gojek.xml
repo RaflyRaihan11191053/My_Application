@@ -8,13 +8,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <FrameLayout
             android:id="@+id/frame_one"
             android:background="@color/green"
             android:layout_width="match_parent"
-            android:layout_height="64dp" />
+            android:layout_height="64dp"
+            tools:ignore="MissingConstraints" />
 
         <SearchView
             android:id="@+id/search_gojek"
@@ -543,25 +544,22 @@
             android:layout_height="24dp" />
 
         <ImageView
-            android:id="@+id/frame_seven"
-            android:background="@drawable/voucher_frame"
-            app:layout_constraintStart_toStartOf="@+id/frame_six"
-            app:layout_constraintTop_toBottomOf="@+id/frame_six"
+            android:id="@+id/content_image"
+            android:src="@drawable/promo_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@id/frame_six"
+            app:layout_constraintTop_toBottomOf="@id/frame_six"
             android:layout_marginTop="20dp"
             android:layout_width="380dp"
-            android:layout_height="288dp">
+            android:layout_height="192dp"/>
 
-            <ImageView
-                android:id="@+id/content_image"
-                android:src="@drawable/promo_image"
-                android:scaleType="centerCrop"
-                app:layout_constraintStart_toStartOf="@id/frame_six"
-                app:layout_constraintTop_toBottomOf="@id/frame_six"
-                android:layout_marginTop="20dp"
-                android:layout_width="380dp"
-                android:layout_height="192dp"/>
-
-        </ImageView>
+        <ImageView
+            android:id="@+id/frame_seven"
+            android:background="@drawable/restaurant_frame"
+            app:layout_constraintStart_toStartOf="@+id/content_image"
+            app:layout_constraintTop_toBottomOf="@+id/content_image"
+            android:layout_width="380dp"
+            android:layout_height="96dp" />
 
         <TextView
             android:id="@+id/content_title"
