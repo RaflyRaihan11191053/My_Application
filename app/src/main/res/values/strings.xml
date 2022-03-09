@@ -20,7 +20,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="search_text">Cari makanan, layanan, &amp; tujuan</string>
+    <string name="search_text_gojek">Cari makanan, layanan, &amp; tujuan</string>
     <string name="nominal_gopay">Rp109.048</string>
     <string name="cek_riwayat_gopay"><![CDATA[Klik & cek riwayat]]></string>
     <string name="text_bayar">Bayar</string>
@@ -41,4 +41,9 @@
     <string name="text_restaurant">Restoran terdekat</string>
     <string name="content_title">Gojek lagi baik hati!</string>
     <string name="content_text">Nikmati diskon hingga 90% GoRide dan GoFood pakai kode voucher \'GOJEKINAJA\'</string>
+    <string name="text_icon_home">Beranda</string>
+    <string name="text_icon_promo">Promo</string>
+    <string name="text_icon_order">Pesanan</string>
+    <string name="text_icon_chat">Chat</string>
+    <string name="search_text_tokped">Cari earphone blutooth</string>
 </resources>

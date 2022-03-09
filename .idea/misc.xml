@@ -5,16 +5,21 @@
       <map>
         <entry key="app/src/main/res/drawable/content_image.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/extra_frame.xml" value="0.1265" />
+        <entry key="app/src/main/res/drawable/frame_one_tokped.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/goclub_view.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/gopay_gojek.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/gopayview_gojek.xml" value="0.1185" />
         <entry key="app/src/main/res/drawable/restaurant_frame.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/search_gojek.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/searchview_gojek.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable/searchview_tokped.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/voucher_frame.xml" value="0.1265" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_layout_gojek.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_layout_tokopedia.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/menu/bottom_navbar_gojek.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/menu/menu_navbar_gojek.xml" value="0.23854166666666668" />
       </map>
     </option>
   </component>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".LayoutTokopedia"
+            android:exported="false" />
+        <activity
             android:name=".LayoutGojek"
             android:exported="true">
             <intent-filter>
@@ -20,11 +23,10 @@
         </activity>
         <activity
             android:name=".ConstraintActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
