@@ -58,10 +58,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/frame_one"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="96dp" />
+            android:layout_width="380dp"
+            android:layout_height="112dp" />
+
+        <FrameLayout
+            android:id="@+id/extra_frame"
+            android:background="@drawable/extra_frame"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintStart_toStartOf="@+id/frame_two"
+            app:layout_constraintTop_toTopOf="@+id/frame_two"
+            android:layout_marginStart="20dp"
+            android:layout_width="144dp"
+            android:layout_height="8dp" />
 
         <FrameLayout
             android:id="@+id/frame_three"
@@ -70,9 +78,516 @@
             app:layout_constraintTop_toTopOf="@+id/frame_two"
             app:layout_constraintBottom_toBottomOf="@+id/frame_two"
             app:layout_constraintStart_toStartOf="@+id/frame_two"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="144dp"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:id="@+id/icon_gopay"
+            android:src="@drawable/icon_gopay"
+            app:layout_constraintStart_toStartOf="@id/frame_two"
+            app:layout_constraintTop_toTopOf="@id/frame_two"
             android:layout_width="128dp"
-            android:layout_height="72dp" />
+            android:layout_height="64dp" />
+
+        <TextView
+            android:id="@+id/nominal_gopay"
+            android:text="@string/nominal_gopay"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/frame_three"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/frame_three"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="96dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cek_riwayat_gopay"
+            android:text="@string/cek_riwayat_gopay"
+            android:fontFamily="sans-serif-black"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="@id/frame_three"
+            app:layout_constraintTop_toBottomOf="@id/nominal_gopay"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_bayar"
+            android:src="@drawable/ic_icon_bayar"
+            app:layout_constraintStart_toEndOf="@+id/frame_three"
+            app:layout_constraintTop_toTopOf="@+id/frame_two"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="18dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/icon_isi_saldo"
+            android:src="@drawable/ic_icon_isi_saldo"
+            app:layout_constraintStart_toEndOf="@+id/icon_bayar"
+            app:layout_constraintTop_toTopOf="@+id/frame_two"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/icon_eksplor"
+            android:src="@drawable/ic_icon_eksplor"
+            app:layout_constraintStart_toEndOf="@+id/icon_isi_saldo"
+            app:layout_constraintTop_toTopOf="@+id/frame_two"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/text_bayar"
+            android:text="@string/text_bayar"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_bayar"
+            app:layout_constraintStart_toStartOf="@id/icon_bayar"
+            app:layout_constraintEnd_toEndOf="@+id/icon_bayar"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_isi_saldo"
+            android:text="@string/text_isi_saldo"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_isi_saldo"
+            app:layout_constraintStart_toStartOf="@id/icon_isi_saldo"
+            app:layout_constraintEnd_toEndOf="@+id/icon_isi_saldo"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_eksplor"
+            android:text="@string/text_eksplor"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_eksplor"
+            app:layout_constraintStart_toStartOf="@id/icon_eksplor"
+            app:layout_constraintEnd_toEndOf="@+id/icon_eksplor"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_goride"
+            android:src="@drawable/ic_icon_goride"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_two"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="28dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_gocar"
+            android:src="@drawable/ic_icon_gocar"
+            app:layout_constraintTop_toBottomOf="@id/frame_two"
+            app:layout_constraintStart_toEndOf="@id/icon_goride"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_gofood"
+            android:src="@drawable/ic_icon_gofood"
+            app:layout_constraintTop_toBottomOf="@id/frame_two"
+            app:layout_constraintEnd_toStartOf="@id/icon_gosend"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_gosend"
+            android:src="@drawable/ic_icon_gosend"
+            app:layout_constraintTop_toBottomOf="@id/frame_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/text_goride"
+            android:text="@string/text_goride"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_goride"
+            app:layout_constraintEnd_toEndOf="@id/icon_goride"
+            app:layout_constraintTop_toBottomOf="@+id/icon_goride"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_gocar"
+            android:text="@string/text_gocar"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_gocar"
+            app:layout_constraintEnd_toEndOf="@id/icon_gocar"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gocar"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_gofood"
+            android:text="@string/text_gofood"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_gofood"
+            app:layout_constraintEnd_toEndOf="@id/icon_gofood"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gofood"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_gosend"
+            android:text="@string/gosend"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_gosend"
+            app:layout_constraintEnd_toEndOf="@id/icon_gosend"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gosend"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_gomart"
+            android:src="@drawable/ic_icon_gomart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_goride"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="28dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_gopulsa"
+            android:src="@drawable/ic_icon_gopulsa"
+            app:layout_constraintTop_toBottomOf="@id/text_gocar"
+            app:layout_constraintStart_toEndOf="@id/icon_gomart"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_pedulilindungi"
+            android:src="@drawable/ic_icon_pedulilindungi"
+            app:layout_constraintTop_toBottomOf="@id/text_gofood"
+            app:layout_constraintEnd_toStartOf="@id/icon_others"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="38dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/icon_others"
+            android:src="@drawable/ic_icon_others"
+            app:layout_constraintTop_toBottomOf="@id/text_gosend"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="34dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/text_gomart"
+            android:text="@string/text_gomart"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_gomart"
+            app:layout_constraintEnd_toEndOf="@id/icon_gomart"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gomart"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_gopulsa"
+            android:text="@string/text_gopulsa"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_gopulsa"
+            app:layout_constraintEnd_toEndOf="@id/icon_gopulsa"
+            app:layout_constraintTop_toBottomOf="@+id/icon_gopulsa"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_pedulilindungi"
+            android:text="@string/text_pedulilindungi"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_pedulilindungi"
+            app:layout_constraintEnd_toEndOf="@id/icon_pedulilindungi"
+            app:layout_constraintTop_toBottomOf="@+id/icon_pedulilindungi"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_others"
+            android:text="@string/text_others"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/icon_others"
+            app:layout_constraintEnd_toEndOf="@id/icon_others"
+            app:layout_constraintTop_toBottomOf="@+id/icon_pedulilindungi"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/frame_four"
+            android:background="@drawable/goclub_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gopulsa"
+            android:layout_marginTop="16dp"
+            android:layout_width="380dp"
+            android:layout_height="80dp"/>
+
+        <ImageView
+            android:id="@+id/icon_goclub"
+            android:src="@drawable/ic_icon_goclub"
+            app:layout_constraintStart_toStartOf="@+id/frame_four"
+            app:layout_constraintTop_toTopOf="@+id/frame_four"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_four"
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/text_goclub"
+            android:text="@string/text_goclub"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@+id/frame_four"
+            app:layout_constraintStart_toEndOf="@+id/icon_goclub"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progres_bar_goclub"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="5"
+            app:layout_constraintStart_toEndOf="@+id/icon_goclub"
+            app:layout_constraintTop_toBottomOf="@id/text_goclub"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_clock"
+            android:src="@drawable/ic_icon_clock"
+            app:layout_constraintStart_toEndOf="@+id/icon_goclub"
+            app:layout_constraintTop_toBottomOf="@+id/progres_bar_goclub"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/text_clock"
+            android:text="@string/text_clock"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/icon_clock"
+            app:layout_constraintTop_toBottomOf="@+id/progres_bar_goclub"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_right"
+            android:src="@drawable/ic_icon_right"
+            app:layout_constraintTop_toTopOf="@id/frame_four"
+            app:layout_constraintBottom_toBottomOf="@id/frame_four"
+            app:layout_constraintEnd_toEndOf="@id/frame_four"
+            android:layout_marginEnd="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/text_gojek"
+            android:text="@string/text_gojek"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/frame_four"
+            app:layout_constraintTop_toBottomOf="@id/frame_four"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/frame_five"
+            android:background="@drawable/voucher_frame"
+            app:layout_constraintStart_toStartOf="@+id/text_gojek"
+            app:layout_constraintTop_toBottomOf="@+id/text_gojek"
+            android:layout_marginTop="12dp"
+            android:layout_width="380dp"
+            android:layout_height="48dp" />
+
+        <ImageView
+            android:id="@+id/frame_six"
+            android:background="@drawable/restaurant_frame"
+            app:layout_constraintStart_toStartOf="@+id/frame_five"
+            app:layout_constraintTop_toBottomOf="@+id/frame_five"
+            android:layout_width="380dp"
+            android:layout_height="48dp" />
+
+        <ImageView
+            android:id="@+id/icon_discount"
+            android:src="@drawable/ic_icon_discount"
+            app:layout_constraintStart_toStartOf="@id/frame_five"
+            app:layout_constraintTop_toTopOf="@id/frame_five"
+            app:layout_constraintBottom_toBottomOf="@id/frame_five"
+            android:layout_marginStart="16dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/text_discount"
+            android:text="@string/text_voucher"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/icon_discount"
+            app:layout_constraintTop_toTopOf="@id/frame_five"
+            app:layout_constraintBottom_toBottomOf="@id/frame_five"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_right_discount"
+            android:src="@drawable/ic_icon_right"
+            app:layout_constraintEnd_toEndOf="@id/frame_five"
+            app:layout_constraintTop_toTopOf="@id/frame_five"
+            app:layout_constraintBottom_toBottomOf="@id/frame_five"
+            android:layout_marginEnd="16dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/icon_restaurant"
+            android:src="@drawable/ic_icon_restaurant"
+            app:layout_constraintStart_toStartOf="@id/frame_six"
+            app:layout_constraintTop_toTopOf="@id/frame_six"
+            app:layout_constraintBottom_toBottomOf="@id/frame_six"
+            android:layout_marginStart="16dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/text_restaurant"
+            android:text="@string/text_restaurant"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/icon_restaurant"
+            app:layout_constraintTop_toTopOf="@id/frame_six"
+            app:layout_constraintBottom_toBottomOf="@id/frame_six"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_right_restaurant"
+            android:src="@drawable/ic_icon_right"
+            app:layout_constraintEnd_toEndOf="@id/frame_six"
+            app:layout_constraintTop_toTopOf="@id/frame_six"
+            app:layout_constraintBottom_toBottomOf="@id/frame_six"
+            android:layout_marginEnd="16dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/frame_seven"
+            android:background="@drawable/voucher_frame"
+            app:layout_constraintStart_toStartOf="@+id/frame_six"
+            app:layout_constraintTop_toBottomOf="@+id/frame_six"
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="288dp">
+
+            <ImageView
+                android:id="@+id/content_image"
+                android:src="@drawable/promo_image"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@id/frame_six"
+                app:layout_constraintTop_toBottomOf="@id/frame_six"
+                android:layout_marginTop="20dp"
+                android:layout_width="380dp"
+                android:layout_height="192dp"/>
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/content_title"
+            android:text="@string/content_title"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/frame_seven"
+            app:layout_constraintTop_toTopOf="@id/frame_seven"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/content_text"
+            android:text="@string/content_text"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/frame_seven"
+            app:layout_constraintTop_toBottomOf="@id/content_title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -10,8 +10,6 @@
         <item>Iwatch</item>
     </string-array>
 
-    <string name="search_text">Cari makanan, layanan, &amp; tujuan</string>
-
     <string name="title_activity_main2">MainActivity2</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -21,4 +19,26 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="search_text">Cari makanan, layanan, &amp; tujuan</string>
+    <string name="nominal_gopay">Rp109.048</string>
+    <string name="cek_riwayat_gopay"><![CDATA[Klik & cek riwayat]]></string>
+    <string name="text_bayar">Bayar</string>
+    <string name="text_isi_saldo">Isi Saldo</string>
+    <string name="text_eksplor">Eksplor</string>
+    <string name="text_goride">GoRide</string>
+    <string name="text_gocar">GoCar</string>
+    <string name="text_gofood">GoFood</string>
+    <string name="gosend">GoSend</string>
+    <string name="text_gomart">GoMart</string>
+    <string name="text_gopulsa">GoPulsa</string>
+    <string name="text_pedulilindungi">Check In</string>
+    <string name="text_others">Lainnya</string>
+    <string name="text_goclub">193 XP lagi ada harta karun</string>
+    <string name="text_clock">Harta Karun bentar lagi hilang</string>
+    <string name="text_gojek">Akses cepat</string>
+    <string name="text_voucher">Ada voucher nganggur, nih</string>
+    <string name="text_restaurant">Restoran terdekat</string>
+    <string name="content_title">Gojek lagi baik hati!</string>
+    <string name="content_text">Nikmati diskon hingga 90% GoRide dan GoFood pakai kode voucher \'GOJEKINAJA\'</string>
 </resources>
