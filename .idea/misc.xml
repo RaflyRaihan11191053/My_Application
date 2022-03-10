@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.101" />
         <entry key="app/src/main/res/drawable/content_image.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/extra_frame.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/frame_one_tokped.xml" value="0.1235" />
@@ -16,6 +17,7 @@
         <entry key="app/src/main/res/drawable/search_gojek.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/searchview_gojek.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/searchview_tokped.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/shape_ads.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/voucher_frame.xml" value="0.1265" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_layout_gojek.xml" value="0.25" />
