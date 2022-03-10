@@ -10,8 +10,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#3E58E7</color>
+    <color name="light_grey">#EFEFEF</color>
     <color name="grey">#D8D8D8</color>
     <color name="dark_grey">#808080</color>
     <color name="ungu_binar">#50209E</color>
     <color name="purple_50">#9858FF</color>
+    <color name="red">#FF3021</color>
 </resources>

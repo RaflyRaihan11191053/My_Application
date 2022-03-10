@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icon_home"
+        android:title="@string/text_home_tokped"
+        android:icon="@drawable/ic_icon_home_tokped" />
+
+    <item
+        android:id="@+id/icon_feed"
+        android:title="@string/text_icon_feed"
+        android:icon="@drawable/ic_icon_feed_tokped" />
+
+    <item
+        android:id="@+id/icon_official"
+        android:title="@string/text_icon_official"
+        android:icon="@drawable/ic_icon_official_tokped" />
+
+    <item
+        android:id="@+id/icon_whistlist"
+        android:title="@string/text_icon_whistlist"
+        android:icon="@drawable/ic_icon_whistlist_tokped" />
+
+    <item
+        android:id="@+id/icon_transaction"
+        android:title="@string/text_icon_transaction"
+        android:icon="@drawable/ic_icon_transaction_tokped" />
+
+</menu>
