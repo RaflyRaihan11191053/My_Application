@@ -844,7 +844,7 @@
                             android:layout_height="208dp"
                             android:layout_marginStart="12dp"
                             app:cardBackgroundColor="@color/light_grey"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="12dp"
                             app:layout_constraintStart_toEndOf="@id/card_one"
                             app:layout_constraintTop_toTopOf="parent">
 
