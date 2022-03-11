@@ -83,7 +83,20 @@
     <string name="text_icon_whistlist">Whistlist</string>
     <string name="text_icon_transaction">Transaksi</string>
     <string name="text_discount_tokped">Kejar Diskon</string>
-    <string name="text_countdown_tokped">Bearkhir dalam</string>
+    <string name="text_countdown_tokped">Berakhir dalam</string>
     <string name="text_see_video">Lihat Semua</string>
     <string name="text_countdown">09 menit 26 detik</string>
+    <string name="price_flash_sale_one">Rp 310.000</string>
+    <string name="real_price_flash_sale_one">Rp 499.000</string>
+    <string name="discount_flash_sale_one">38%</string>
+    <string name="location_flash_sale_one">Jakarta Barat</string>
+    <string name="text_stock_flash_sale">Segera Habis</string>
+    <string name="price_flash_sale_two">Rp 109.000</string>
+    <string name="discount_flash_sale_two">80%</string>
+    <string name="real_price_flash_sale_two">Rp 540.000</string>
+    <string name="location_flash_sale_two">Jakarta Pusat</string>
+    <string name="price_flash_sale_three">Rp 439.000</string>
+    <string name="discount_flash_sale_three">18%</string>
+    <string name="real_price_flash_sale_three">Rp 529.000</string>
+    <string name="location_flash_sale_three">Jakarta Selatan</string>
 </resources>

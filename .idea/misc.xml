@@ -6,8 +6,12 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.101" />
         <entry key="app/src/main/res/drawable/content_image.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/extra_frame.xml" value="0.1265" />
+        <entry key="app/src/main/res/drawable/frame_background.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/frame_countdown.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/frame_one_tokped.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/frame_three_radius.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/frame_three_stroke.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/frame_two_radius.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/frame_viewers.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/goclub_view.xml" value="0.1265" />
         <entry key="app/src/main/res/drawable/gopay_gojek.xml" value="0.1265" />

@@ -715,7 +715,7 @@
                             android:layout_height="208dp"
                             android:layout_marginStart="16dp"
                             app:cardBackgroundColor="@color/light_grey"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="12dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -842,7 +842,7 @@
                             android:id="@+id/card_two"
                             android:layout_width="178dp"
                             android:layout_height="208dp"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="12dp"
                             app:cardBackgroundColor="@color/light_grey"
                             app:cardCornerRadius="20dp"
                             app:layout_constraintStart_toEndOf="@id/card_one"
@@ -974,7 +974,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginEnd="16dp"
                             app:cardBackgroundColor="@color/light_grey"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="12dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@id/card_two"
                             app:layout_constraintTop_toTopOf="parent">
@@ -1136,7 +1136,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="9dp"
-                android:background="@drawable/frame_viewers"
+                android:background="@drawable/frame_countdown"
                 android:backgroundTint="@color/red"
                 app:layout_constraintStart_toEndOf="@+id/countdown_tokped"
                 app:layout_constraintTop_toBottomOf="@id/discount_tokped" />
@@ -1175,9 +1175,451 @@
                 android:text="@string/text_see_all"
                 android:textColor="@color/green"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/discount_tokped" />
+
+            <ImageView
+                android:id="@+id/frame_background"
+                android:background="@drawable/frame_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_see_discount"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_flash_sale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/frame_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="242dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_flash_sale_one"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="178dp"
+                            android:layout_height="240dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical" >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <ImageView
+                                        android:id="@+id/image_flash_sale_one"
+                                        android:src="@drawable/flash_sale_one"
+                                        android:scaleType="fitXY"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp" />
+
+                                    <TextView
+                                        android:id="@+id/price_flash_sale_one"
+                                        android:text="@string/price_flash_sale_one"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/image_flash_sale_one"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:id="@+id/frame_discount_one"
+                                        android:background="@drawable/frame_viewers"
+                                        android:backgroundTint="@color/pink"
+                                        app:layout_constraintStart_toStartOf="@id/price_flash_sale_one"
+                                        app:layout_constraintTop_toBottomOf="@id/price_flash_sale_one"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="32dp"
+                                        android:layout_height="18dp" />
+
+                                    <TextView
+                                        android:id="@+id/discount_flash_sale_one"
+                                        android:text="@string/discount_flash_sale_one"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/red"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_one"
+                                        app:layout_constraintEnd_toEndOf="@id/frame_discount_one"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_one"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_one"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/real_price_flash_sale_one"
+                                        android:text="@string/real_price_flash_sale_one"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toEndOf="@id/frame_discount_one"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_one"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_one"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <View
+                                        android:id="@+id/line_one"
+                                        app:layout_constraintStart_toStartOf="@id/real_price_flash_sale_one"
+                                        app:layout_constraintTop_toTopOf="@+id/real_price_flash_sale_one"
+                                        app:layout_constraintBottom_toBottomOf="@id/real_price_flash_sale_one"
+                                        android:layout_width="62dp"
+                                        android:layout_height="1dp"
+                                        android:background="@color/dark_grey"/>
+
+                                    <ImageView
+                                        android:id="@+id/icon_official_store_flash_sale_one"
+                                        android:src="@drawable/ic_icon_official_store"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_one"
+                                        app:layout_constraintTop_toBottomOf="@id/frame_discount_one"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp" />
+
+                                    <TextView
+                                        android:id="@+id/location_flash_sale_one"
+                                        android:text="@string/location_flash_sale_one"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toEndOf="@+id/icon_official_store_flash_sale_one"
+                                        app:layout_constraintTop_toTopOf="@+id/icon_official_store_flash_sale_one"
+                                        app:layout_constraintBottom_toBottomOf="@+id/icon_official_store_flash_sale_one"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progresbar_flash_sale_one"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="85"
+                                        app:layout_constraintStart_toStartOf="@id/icon_official_store_flash_sale_one"
+                                        app:layout_constraintTop_toBottomOf="@+id/icon_official_store_flash_sale_one"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="156dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/stock_flash_sale_one"
+                                        android:text="@string/text_stock_flash_sale"
+                                        android:fontFamily="sans-serif-black"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@id/progresbar_flash_sale_one"
+                                        app:layout_constraintTop_toBottomOf="@+id/progresbar_flash_sale_one"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_flash_sale_two"
+                            app:layout_constraintStart_toEndOf="@+id/card_flash_sale_one"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginStart="12dp"
+                            android:layout_width="178dp"
+                            android:layout_height="240dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical" >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <ImageView
+                                        android:id="@+id/image_flash_sale_two"
+                                        android:src="@drawable/flash_sale_two"
+                                        android:scaleType="fitXY"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp" />
+
+                                    <TextView
+                                        android:id="@+id/price_flash_sale_two"
+                                        android:text="@string/price_flash_sale_two"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/image_flash_sale_two"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:id="@+id/frame_discount_two"
+                                        android:background="@drawable/frame_viewers"
+                                        android:backgroundTint="@color/pink"
+                                        app:layout_constraintStart_toStartOf="@id/price_flash_sale_two"
+                                        app:layout_constraintTop_toBottomOf="@id/price_flash_sale_two"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="32dp"
+                                        android:layout_height="18dp" />
+
+                                    <TextView
+                                        android:id="@+id/discount_flash_sale_two"
+                                        android:text="@string/discount_flash_sale_two"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/red"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_two"
+                                        app:layout_constraintEnd_toEndOf="@id/frame_discount_two"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_two"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_two"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/real_price_flash_sale_two"
+                                        android:text="@string/real_price_flash_sale_two"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toEndOf="@id/frame_discount_two"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_two"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_two"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <View
+                                        android:id="@+id/line_two"
+                                        app:layout_constraintStart_toStartOf="@id/real_price_flash_sale_two"
+                                        app:layout_constraintTop_toTopOf="@+id/real_price_flash_sale_two"
+                                        app:layout_constraintBottom_toBottomOf="@id/real_price_flash_sale_two"
+                                        android:layout_width="62dp"
+                                        android:layout_height="1dp"
+                                        android:background="@color/dark_grey"/>
+
+                                    <ImageView
+                                        android:id="@+id/icon_official_store_flash_sale_two"
+                                        android:src="@drawable/ic_icon_official_store"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_two"
+                                        app:layout_constraintTop_toBottomOf="@id/frame_discount_two"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp" />
+
+                                    <TextView
+                                        android:id="@+id/location_flash_sale_two"
+                                        android:text="@string/location_flash_sale_two"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toEndOf="@+id/icon_official_store_flash_sale_two"
+                                        app:layout_constraintTop_toTopOf="@+id/icon_official_store_flash_sale_two"
+                                        app:layout_constraintBottom_toBottomOf="@+id/icon_official_store_flash_sale_two"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progresbar_flash_sale_two"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="85"
+                                        app:layout_constraintStart_toStartOf="@id/icon_official_store_flash_sale_two"
+                                        app:layout_constraintTop_toBottomOf="@+id/icon_official_store_flash_sale_two"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="156dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/stock_flash_sale_two"
+                                        android:text="@string/text_stock_flash_sale"
+                                        android:fontFamily="sans-serif-black"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@id/progresbar_flash_sale_two"
+                                        app:layout_constraintTop_toBottomOf="@+id/progresbar_flash_sale_two"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_flash_sale_three"
+                            app:layout_constraintStart_toEndOf="@+id/card_flash_sale_two"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_width="178dp"
+                            android:layout_height="240dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical" >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <ImageView
+                                        android:id="@+id/image_flash_sale_three"
+                                        android:src="@drawable/flash_sale_three"
+                                        android:scaleType="fitXY"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp" />
+
+                                    <TextView
+                                        android:id="@+id/price_flash_sale_three"
+                                        android:text="@string/price_flash_sale_three"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/image_flash_sale_three"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:id="@+id/frame_discount_three"
+                                        android:background="@drawable/frame_viewers"
+                                        android:backgroundTint="@color/pink"
+                                        app:layout_constraintStart_toStartOf="@id/price_flash_sale_three"
+                                        app:layout_constraintTop_toBottomOf="@id/price_flash_sale_three"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="32dp"
+                                        android:layout_height="18dp" />
+
+                                    <TextView
+                                        android:id="@+id/discount_flash_sale_three"
+                                        android:text="@string/discount_flash_sale_three"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/red"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_three"
+                                        app:layout_constraintEnd_toEndOf="@id/frame_discount_three"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_three"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_three"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/real_price_flash_sale_three"
+                                        android:text="@string/real_price_flash_sale_three"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toEndOf="@id/frame_discount_three"
+                                        app:layout_constraintTop_toTopOf="@id/frame_discount_three"
+                                        app:layout_constraintBottom_toBottomOf="@id/frame_discount_three"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <View
+                                        android:id="@+id/line_three"
+                                        app:layout_constraintStart_toStartOf="@id/real_price_flash_sale_three"
+                                        app:layout_constraintTop_toTopOf="@+id/real_price_flash_sale_three"
+                                        app:layout_constraintBottom_toBottomOf="@id/real_price_flash_sale_three"
+                                        android:layout_width="62dp"
+                                        android:layout_height="1dp"
+                                        android:background="@color/dark_grey"/>
+
+                                    <ImageView
+                                        android:id="@+id/icon_official_store_flash_sale_three"
+                                        android:src="@drawable/ic_icon_official_store"
+                                        app:layout_constraintStart_toStartOf="@id/frame_discount_three"
+                                        app:layout_constraintTop_toBottomOf="@id/frame_discount_three"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp" />
+
+                                    <TextView
+                                        android:id="@+id/location_flash_sale_three"
+                                        android:text="@string/location_flash_sale_three"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toEndOf="@+id/icon_official_store_flash_sale_three"
+                                        app:layout_constraintTop_toTopOf="@+id/icon_official_store_flash_sale_three"
+                                        app:layout_constraintBottom_toBottomOf="@+id/icon_official_store_flash_sale_three"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progresbar_flash_sale_three"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="85"
+                                        app:layout_constraintStart_toStartOf="@id/icon_official_store_flash_sale_three"
+                                        app:layout_constraintTop_toBottomOf="@+id/icon_official_store_flash_sale_three"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="156dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/stock_flash_sale_three"
+                                        android:text="@string/text_stock_flash_sale"
+                                        android:fontFamily="sans-serif-black"
+                                        android:textColor="@color/dark_grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@id/progresbar_flash_sale_three"
+                                        app:layout_constraintTop_toBottomOf="@+id/progresbar_flash_sale_three"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
